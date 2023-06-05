@@ -10,7 +10,7 @@ export default function ReactPage() {
   return (
     <Box>
       <Box>
-        <Typography>Javascript Patterns</Typography>
+        <Typography>React Patterns</Typography>
       </Box>
       <Box>
         <ReactContainerPresentationPattern />

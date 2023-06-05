@@ -1,12 +1,11 @@
 import { Box, Typography } from "@mui/material";
+import RenderPropsComponent from "../render-props/RenderPropsComponent";
 
 export default function ReactRenderPropsPattern() {
   return (
     <Box>
       <Typography variant="h2">Render Props Pattern</Typography>
-      <Typography variant="body2">blabla</Typography>
-      <Typography variant="h3">Overview</Typography>
-      <Typography variant="body2">blabla</Typography>
+      <RenderPropsComponent />
     </Box>
   );
 }

@@ -1,12 +1,26 @@
 import { Box, Typography } from "@mui/material";
+import { ListingsProvider } from "../provider/context/ListingsProvider";
+import Input from "../compound/Input";
+import Listings from "../compound/Listings";
 
 export default function ReactCompoundPattern() {
   return (
     <Box>
       <Typography variant="h2">Compound Pattern</Typography>
-      <Typography variant="body2">blabla</Typography>
-      <Typography variant="h3">Overview</Typography>
-      <Typography variant="body2">blabla</Typography>
+      <ListingsProvider>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: '3em',
+        }}
+      >
+        <Input />
+        <Listings />
+      </div>
+    </ListingsProvider>
     </Box>
   );
 }
